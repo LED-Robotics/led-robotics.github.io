@@ -1,0 +1,64 @@
+---
+---
+$green: #27f525
+$purple: #663497
+$basicchars: U+0000-00FF
+
+@font-face
+    font-family: 'Adam'
+    src: local('ADAM.CG PRO'), url(../assets/font/adam.woff2) format('woff2'), url(../assets/font/adam.woff) format('woff')
+    unicode-range: $basicchars
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html, body
+    height: 100%
+    overflow-x: hidden
+    overflow-y: hidden
+
+body
+    font-family: 'Adam', 'Roboto', sans-serif
+    background-color: $purple
+    color: $green
+    height: 100vh
+    text-align: center
+    display: flex
+    flex-direction: column
+
+.left
+    img
+        padding-left: 10%
+        padding-right: 40%
+        width: 100%
+
+.right
+    padding-left: 40%
+    margin-top: -20%
+
+    h1
+        padding-top: 10px
+        padding-bottom: 20px
+        font-size: 40px
+        margin: 0
+        color: $green
+
+    h2
+        font-size: 55px
+        color: $green
+    h4
+        padding-top: 20px
+        font-size: 15px
+        color: $green
+
+    .button
+        font-family: 'Adam'
+        padding: 12px 10px
+        text-align: right
+        margin: 20px
+        text-decoration: none
+        background: $green
+        color: $purple
+        border-radius: 7px
