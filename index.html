@@ -1,0 +1,66 @@
+---
+layout: default
+title: Hello World!
+stylesheets:
+    - banners
+    - index
+
+scripts:
+    - index
+description:
+---
+
+<div class="bg"></div>
+<div class="video-ext-container">
+    <div class="video-container">
+        <!-- This video's src is added by JavaScript.
+            That way it won't load the extra data on a mobile device.
+            The muted attribute must be included despite the video having no sound.
+            Otherwise Safari will report that the page is playing audio. -->
+        <video src autoplay loop muted></video>
+    </div>
+</div>
+<div class="jumbotron">
+    <h1 id="welcome">LIGHT IT UP</h1>
+    <span></span>
+</div>
+<main>
+    <div>
+        <img
+            src="/images/FRC/Index.webp"
+            alt="The Team during the Tallahasse Regional season, 2024."
+        />
+        {% include banners.html year=2024%}
+        <p>
+            We are LED Robotics 6722, a passionate FIRST Robotics Competition
+            (FRC) and VEX team based in Pasco County, Florida. Our dynamic group
+            integrates engineering, programming, and teamwork to design and
+            build innovative robots that tackle unique challenges each season.
+            Beyond our technical pursuits, we are actively engaged in our
+            community through events like Geared for Girls, which encourages
+            young women to explore STEM careers, and the Trinity Farmers Market,
+            where we share our enthusiasm for robotics with local residents.
+            Additionally, we reach out to surrounding teams entering FRC,
+            providing mentorship and support to help them navigate their own
+            robotics journeys. Through our commitment to collaboration and
+            community involvement, we strive to inspire others and foster a love
+            for technology and teamwork.
+        </p>
+        <br />
+        <p>
+            <a href="http://firstinspires.org/robotics/frc"
+                >FIRST Robotics Competition (FRC)
+            </a>
+        </p>
+        <!--<p><a href="outreach">Community Events</a>.</p>-->
+        <br />
+        <p>
+            If you'd like to help us with fundraising, please visit
+            <a href="sponsorship">this page</a>.
+        </p>
+        <p>
+            To see our competition schedule for this year, visit
+            <a href="https://www.thebluealliance.com/team/6722">this page</a>.
+        </p>
+    </div>
+</main>

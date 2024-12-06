@@ -1,0 +1,30 @@
+title: Team 6722
+email: 
+description: A First Robotics team within Pasco county
+baseurl: "" # Don't change this, this refers to the site's relative path, like /blog.
+url: "https://team6722.com/"
+twitter_username: Robotics1418
+github_username: LED-Robotics 
+youtube_username: LED_Team6722
+instagram_username:
+facebook_username:
+
+# Build settings
+sass:
+    style: compressed
+exclude:
+    - README.md
+    - LICENSE.md
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - package.json
+    - vendor
+    - vendor/cache
+    - ruby
+    - .bundle
+include:
+    - _pages
+plugins:
+    - octopress-autoprefixer
+    - jekyll-redirect-from

@@ -1,0 +1,187 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>LED Robotics - Team 6722</title>
+
+        <style>
+            @keyframes pulse {
+                0%,
+                100% {
+                    opacity: 0.1;
+                }
+
+                50% {
+                    opacity: 0.3;
+                }
+            }
+
+            @keyframes flow {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            @keyframes twinkle {
+                0%,
+                100% {
+                    opacity: 0.1;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+            }
+
+            body {
+                font-family: "Arial", sans-serif;
+
+                line-height: 1.6;
+
+                margin: 0;
+
+                padding: 0;
+
+                color: #e0e0e0;
+
+                background-color: #000;
+
+                background-image: linear-gradient(
+                        to right,
+                        rgba(0, 255, 0, 0.1) 1px,
+                        transparent 1px
+                    ),
+                    linear-gradient(
+                        to bottom,
+                        rgba(0, 255, 0, 0.1) 1px,
+                        transparent 1px
+                    );
+
+                background-size: 20px 20px;
+
+                position: relative;
+
+                overflow-x: hidden;
+            }
+
+            body::before {
+                content: "";
+
+                position: fixed;
+
+                top: 0;
+
+                left: 0;
+
+                right: 0;
+
+                bottom: 0;
+
+                background: radial-gradient(
+                        circle at 20% 50%,
+                        rgba(0, 255, 0, 0.1) 2px,
+                        transparent 2px
+                    ),
+                    radial-gradient(
+                        circle at 70% 20%,
+                        rgba(0, 255, 0, 0.1) 2px,
+                        transparent 2px
+                    ),
+                    radial-gradient(
+                        circle at 40% 80%,
+                        rgba(0, 255, 0, 0.1) 2px,
+                        transparent 2px
+                    ),
+                    radial-gradient(
+                        circle at 90% 60%,
+                        rgba(0, 255, 0, 0.1) 2px,
+                        transparent 2px
+                    );
+
+                background-size: 300px 300px;
+
+                animation: pulse 4s infinite;
+
+                z-index: -2;
+            }
+
+            body::after {
+                content: "";
+
+                position: fixed;
+
+                top: 0;
+
+                left: 0;
+
+                right: 0;
+
+                bottom: 0;
+
+                background: linear-gradient(
+                    45deg,
+                    rgba(0, 255, 0, 0.05),
+                    rgba(0, 100, 0, 0.05),
+                    rgba(0, 255, 0, 0.05),
+                    rgba(0, 100, 0, 0.05)
+                );
+
+                background-size: 400% 400%;
+
+                animation: flow 15s ease infinite;
+
+                z-index: -1;
+            }
+
+            .led {
+                position: fixed;
+
+                width: 2px;
+
+                height: 2px;
+
+                background: #00ff00;
+
+                border-radius: 50%;
+
+                animation: twinkle 2s infinite;
+            }
+
+            /* ... (rest of the previous styles remain unchanged) ... */
+        </style>
+    </head>
+
+    <body>
+        <script>
+            // Add twinkling LED lights
+
+            for (let i = 0; i < 50; i++) {
+                const led = document.createElement("div");
+
+                led.className = "led";
+
+                led.style.left = Math.random() * 100 + "vw";
+
+                led.style.top = Math.random() * 100 + "vh";
+
+                led.style.animationDelay = Math.random() * 2 + "s";
+
+                document.body.appendChild(led);
+            }
+        </script>
+
+        <!-- ... (rest of the HTML content remains unchanged) ... -->
+    </body>
+</html>
