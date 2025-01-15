@@ -2,10 +2,47 @@
 layout: default
 title: Robots
 permalink: /robots
-stylesheets:
-    - banners
-    - grid
-description: Check out all of the old challenges and robots we have created from 2004 onward!
+stylesheets: -robots
+description:
 ---
 
-<main></main>
+<main>
+    <div>
+        <div class="VEX">
+            {% for post in site.VEX %}
+            <article class="VEX">
+                <h1>
+                    <a href="{{ site.baseurl }}{{ VEX.url }}"
+                        >{{ VEX.title }}</a
+                    >
+                </h1>
+
+                <div class="entry">{{ post.excerpt }}</div>
+
+                <a href="{{ site.baseurl }}{{ VEX.url }}" class="read-more"
+                    >Read More</a
+                >
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+    <div>
+        <div class="posts">
+            {% for post in site.posts %}
+            <article class="post">
+                <h1>
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                        >{{ post.title }}</a
+                    >
+                </h1>
+
+                <div class="entry">{{ post.excerpt }}</div>
+
+                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"
+                    >Read More</a
+                >
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</main>

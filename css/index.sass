@@ -1,6 +1,25 @@
 ---
 ---
 
+iframe
+    border-radius: 25px
+    border: 8px solid #27f525
+
+.responsive-iframe-container
+    border-radius: 25px
+    box-shadow: 0px 5px 5px 5px #381351
+    position: relative
+    padding-bottom: 56.25%
+    padding-top: 30px
+    height: 0
+    overflow: visable
+
+.responsive-iframe-container iframe,.vresponsive-iframe-container object, .vresponsive-iframe-container embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
 
 header
     width: 100%
@@ -55,9 +74,10 @@ video
     text-align: center
 
 h1
+    margin-top: 20px
     font-size: 5em
     margin-bottom: 10px
-    text-transform: uppercase
+
 
 
 .jumbotron h3
@@ -72,7 +92,7 @@ main
         margin: 0 auto
         >img
             width: 50%
-            margin: 10px 20px 10px 0px
+            margin: 10px 20px 35px 0px
             float: left
     p
         margin: 0 auto
@@ -84,12 +104,14 @@ main
     margin: 10px 20px 10px 0px
 
 @media (min-width: 850px) and (max-width: 1070px)
-    .banners
+    .banners, hotdog
         display: none
+
 
 @media (max-width: 850px)
     .jumbotron, .video-ext-container, .video-container, video
         display: none
+
     header
         position: static
     main > div > img
@@ -99,3 +121,11 @@ main
         margin-top: 65px
     article
         padding-top: 50px
+
+    .responsive-iframe-container
+        margin-bottom: 75%
+
+    .responsive-iframe-container iframe,.vresponsive-iframe-container object, .vresponsive-iframe-container embed, .responsive-iframe-container
+
+        width: 100%
+        height: 210%

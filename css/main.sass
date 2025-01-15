@@ -88,6 +88,7 @@ header
     -webkit-transition: height 0.2s
     transition: height 0.2s
 
+
     .title-simple
         display: none
     #logo
@@ -125,11 +126,19 @@ h2
 h3
     font-size: 20px
 
+hr
+    color: $green
+    margin: 10px
+    margin-top: 25px
+
+
 header.shrink
     -webkit-transition: height 0.2s
     transition: height 0.2s
     height: 80px
     position: fixed
+    .social-container
+        margin-top: -15px
     .social:first-child
         margin-right: 0
     .social
@@ -138,6 +147,8 @@ header.shrink
         div
             margin-left: 10px
             display: inline-block
+
+
     #logo
 
         transform: rotate(360deg) scale(0.4)
@@ -337,7 +348,7 @@ main
 
 iframe
     display: block
-    margin: 20px auto
+    margin: auto
     border: 0
 
 td
