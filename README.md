@@ -59,9 +59,5 @@ When running steps in [Setup](#-Setup), there may be an error while installing c
 
 Then retry the steps in [Setup](#-Setup).
 
-## Authors
-* [Erik Boesen](https://github.com/ErikBoesen) - Code, art & design
-* [Carter Fendley](https://github.com/CarterFendley) - Code
-
 ## License
 This software is protected under the MIT license. Basically, do whatever you want as long as you give credit where credit is due and don't hold us liable for anything that happens. More information can be found in [`LICENSE`](LICENSE).
