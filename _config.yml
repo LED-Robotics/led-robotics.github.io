@@ -3,6 +3,7 @@ email:
 description: A First Robotics team within Pasco county
 baseurl: "" # Don't change this, this refers to the site's relative path, like /blog.
 url: "https://team6722.com/"
+twitter_username: Robotics1418
 github_username: LED-Robotics 
 youtube_username: LED_Team6722
 instagram_username:
