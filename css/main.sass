@@ -274,8 +274,8 @@ nav
         float: left
         padding: 0
         &:hover
-            background: $purple
-            border-radius: 8px
+            //background: $purple
+            //border-radius: 8px
     .active
         background: transparent
         border-radius: 8px
@@ -337,14 +337,14 @@ main
         margin: 100px auto
 
 .img-row, table, .iframe-ext-wrapper
-    max-width: 10in
+    max-width: 10in//
     display: block
-    margin: 5px auto
+    margin: 5px auto//
 
 .img-row-2, table, .iframe-ext-wrapper
-    max-width: 10in
+    max-width: 10in//
     display: block
-    margin: 5px auto
+    margin: 5px auto//
 
 iframe
     display: block
@@ -355,7 +355,7 @@ td
     width: 30%
 
 main > img, .img-row, table
-    margin: 20px auto
+    margin: 20px auto//
 
 .img-row img
     width: 31%
@@ -403,19 +403,42 @@ main
 table
     text-align: center
 
-tbody, tr
+tbody
     display: block
     width: 100%
     margin: 0 auto
-    max-width: 8in
+    //max-width: 8in
+tr
+    display: block
+    width: auto
+    margin: 0 10%
+    //max-width: 8in
 
 td
     display: inline-block
-    width: 10 px
+    width: 230px
     vertical-align: top
     ul, li
         list-style-type: none
         padding: 0
+
+#robotTable td
+        display: inline-block
+        width: fit-content
+        vertical-align: top
+        margin-right: 40px
+        ul, li
+            list-style-type: none
+            padding: 0
+
+#robotTable tr td
+        float: left
+
+#robotTable tr 
+        clear: both
+
+#robotTable tr div
+        width: fit-content
 
 footer
     text-align: center

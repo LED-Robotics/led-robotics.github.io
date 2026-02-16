@@ -5,4 +5,49 @@ permalink: /resources
 description: Resources for other FRC teams and presentation logs from our preseason conventions.
 ---
 
-<main></main>
+<main>
+        <hr />
+    <h1>Resources</h1>
+    <br>
+    
+    <h1>I dont know what goes into here, so... Yeah, this is it.</h1>
+    <hr />
+    <div>
+        <div class="VEX">
+            {% for post in site.VEX %}
+            <article class="VEX">
+                <h1>
+                    <a href="{{ site.baseurl }}{{ VEX.url }}"
+                        >{{ VEX.title }}</a
+                    >
+                </h1>
+
+                <div class="entry">{{ post.excerpt }}</div>
+
+                <a href="{{ site.baseurl }}{{ VEX.url }}" class="read-more"
+                    >Read More</a
+                >
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+    <div>
+        <div class="posts">
+            {% for post in site.posts %}
+            <article class="post">
+                <h1>
+                    <a href="{{ site.baseurl }}{{ post.url }}"
+                        >{{ post.title }}</a
+                    >
+                </h1>
+
+                <div class="entry">{{ post.excerpt }}</div>
+
+                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"
+                    >Read More</a
+                >
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</main>
