@@ -12,6 +12,7 @@ if (window.innerWidth >= 850) {
   };
 }
 
+/*
 var greetings = ["LED", "LIGHT", "IT", "UP!"];
 
 var counter = 0;
@@ -23,3 +24,4 @@ setInterval(() => {
     counter += 1;
   }
 }, 1500);
+*/
